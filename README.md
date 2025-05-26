@@ -39,57 +39,57 @@
 
 ## 📱 Screenshots
 
-<div align="center">
+<div align="center" style="margin: 5px;" >
   <img src="./screenshots/login.png" alt="Login" width="400"/>
   <img src="./screenshots/signup.png" alt="Signup" width="400"/>
   <img src="./screenshots/forgot-password.png" alt="Forgot" width="400"/>
   <p><em>Login, Sign Up and Forgot Password</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/homepage.png" alt="Homepage" width="400"/>
   <p><em>Homepage with smart restaurant discovery and navigation</em></p>
 </div>
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/restaurant-list.png" alt="Customer Menu" width="400"/>
   <p><em>Customer view: Menu browsing with detailed items and options</em></p>
    <img src="./screenshots/customer-menu.png" alt="Customer Menu" width="400"/>
   <p><em>Customer view: Menu browsing with detailed items and options</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
  <img src="./screenshots/cart.png" alt="Cart" width="400"/>
   <p><em>Customer view: Cart overview </em></p>
   <img src="./screenshots/cart-payment.png" alt="Cart and Payment" width="400"/>
   <p><em>Customer view: 3 steps secure payment integration with order summary</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/order-history.png" alt="Order History" width="400"/>
   <img src="./screenshots/order-tracking.png" alt="Table Booking & History" width="400"/>
   <p><em>Customer view: Order history and Tracking</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/booking-table.png" alt="Order History" width="400"/>
   <img src="./screenshots/booking-tracking.png" alt="Table Booking & History" width="400"/>
   <p><em>Customer view: Table Booking and Tracking</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400"/>
   <img src="./screenshots/owner-restaurant-management.png" alt="Restaurant Management" width="400"/>
   <p><em>Owner view: Adding and managing restaurants</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400"/>
   <img src="./screenshots/owner-order-booking-management.png" alt="Order and Booking Management" width="400"/>
    <img src="./screenshots/owner-booking-management.png" alt="Order and Booking Management" width="400"/>
   <p><em>Owner view: Managing menus, orders, and bookings</em></p>
 </div>
 
-<div align="center">
+<div align="center" style="margin: 5px;">
   <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400"/>
   <p><em>Owner view: Dashboard overview with key statistics and controls</em></p>
 </div>
@@ -332,17 +332,10 @@ cd frontend
 npm start
 
 
-### 6. Access the Application
-
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5000
-
-
----
+```
 
 ## 📁 Project Structure
 
-```
 
 dinesmart/
 ├── 📁 frontend/ # React frontend
@@ -368,7 +361,7 @@ dinesmart/
 
 ````
 
----
+````
 
 ## 🔌 API Documentation
 
@@ -381,7 +374,7 @@ POST /api/auth/logout            # User logout
 POST /api/auth/forgot-password   # Password reset request
 POST /api/auth/reset-password    # Password reset confirmation
 GET  /api/auth/verify-token      # Token verification
-````
+```
 
 ### Customer Endpoints
 
@@ -431,7 +424,6 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ### Code Standards
 
-- Follow ESLint configuration
 - Write meaningful commit messages
 - Add tests for new features
 - Update documentation as needed
