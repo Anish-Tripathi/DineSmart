@@ -332,34 +332,7 @@ cd frontend
 npm start
 
 
-```
 
-## 📁 Project Structure
-
-
-dinesmart/
-├── 📁 frontend/ # React frontend
-│ ├── 📁 public/
-│ ├── 📁 src/
-│ │ ├── 📁 components/ # Reusable UI components
-│ │ ├── 📁 pages/ # Page components
-│ │ ├── 📁 context/ # React context providers
-│ │ ├── 📁 utils/ # Utility functions
-│ └── 📄 package.json
-├── 📁 server/ # Node.js backend
-│ ├── 📁 controllers/ # Route controllers
-│ ├── 📁 models/ # Mongoose schemas
-│ ├── 📁 routes/ # Express routes
-│ ├── 📁 middleware/ # Custom middleware
-│ ├── 📁 services/ # Business logic services
-│ ├── 📁 utils/ # Utility functions
-│ ├── 📁 config/ # Configuration files
-│ └── 📄 index.js # Entry point
-├── 📁 screenshots/ # Project images (screenshots, etc.)
-├── 📄 README.md
-├── 📄 package.json
-
-````
 
 ````
 
