@@ -103,12 +103,8 @@
   <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
   <img src="./screenshots/owner-order-booking-management.png" alt="Order Management" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
   <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" height="250" style="object-fit: cover;" />
-  <p><em>Owner: Manage menus, orders, and bookings</em></p>
-</div>
-
-<div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400" height="250" style="object-fit: cover;" />
-  <p><em>Dashboard overview with stats and controls</em></p>
+   <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400" height="250" style="object-fit: cover;" />
+  <p><em>Owner: Manage menus, orders, bookings and dashboard overview with stats and controls</em></p>
 </div>
 
 ---
