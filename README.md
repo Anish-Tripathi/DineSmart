@@ -42,9 +42,9 @@
 ## 🔐 Authentication Screens
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/login.png" alt="Login" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/signup.png" alt="Signup" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/forgot-password.png" alt="Forgot" width="400" />
+  <img src="./screenshots/login.png" alt="Login" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/signup.png" alt="Signup" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/forgot-password.png" alt="Forgot" width="400" height="250" style="object-fit: cover;" />
   <p><em>Login, Sign Up and Forgot Password</em></p>
 </div>
 
@@ -53,7 +53,7 @@
 ## 🏠 Homepage
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/homepage.png" alt="Homepage" width="400" />
+  <img src="./screenshots/homepage.png" alt="Homepage" width="400" height="250" style="object-fit: cover;" />
   <p><em>Smart restaurant discovery and navigation</em></p>
 </div>
 
@@ -62,14 +62,14 @@
 ## 🍽️ Customer View – Menu & Ordering
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/restaurant-list.png" alt="Restaurant List" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/customer-menu.png" alt="Customer Menu" width="400" />
+  <img src="./screenshots/restaurant-list.png" alt="Restaurant List" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/customer-menu.png" alt="Customer Menu" width="400" height="250" style="object-fit: cover;" />
   <p><em>Menu browsing with detailed items and options</em></p>
 </div>
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/cart.png" alt="Cart" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/cart-payment.png" alt="Cart and Payment" width="400" />
+  <img src="./screenshots/cart.png" alt="Cart" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/cart-payment.png" alt="Cart and Payment" width="400" height="250" style="object-fit: cover;" />
   <p><em>Cart overview and secure 3-step payment integration</em></p>
 </div>
 
@@ -78,14 +78,14 @@
 ## 📦 Orders & Bookings
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/order-history.png" alt="Order History" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/order-tracking.png" alt="Order Tracking" width="400" />
+  <img src="./screenshots/order-history.png" alt="Order History" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/order-tracking.png" alt="Order Tracking" width="400" height="250" style="object-fit: cover;" />
   <p><em>View order history and real-time tracking</em></p>
 </div>
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/booking-table.png" alt="Table Booking" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/booking-tracking.png" alt="Booking Tracking" width="400" />
+  <img src="./screenshots/booking-table.png" alt="Table Booking" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/booking-tracking.png" alt="Booking Tracking" width="400" height="250" style="object-fit: cover;" />
   <p><em>Table booking and reservation tracking</em></p>
 </div>
 
@@ -94,23 +94,22 @@
 ## 🧑‍🍳 Owner Dashboard & Management
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/owner-restaurant-management.png" alt="Restaurant Management" width="400" />
+  <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/owner-restaurant-management.png" alt="Restaurant Management" width="400" height="250" style="object-fit: cover;" />
   <p><em>Owner: Add and manage restaurants</em></p>
 </div>
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/owner-order-booking-management.png" alt="Order Management" width="400" style="margin-right: 10px;" />
-  <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" />
+  <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/owner-order-booking-management.png" alt="Order Management" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
+  <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" height="250" style="object-fit: cover;" />
   <p><em>Owner: Manage menus, orders, and bookings</em></p>
 </div>
 
 <div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400" />
+  <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400" height="250" style="object-fit: cover;" />
   <p><em>Dashboard overview with stats and controls</em></p>
 </div>
-
 
 ---
 
