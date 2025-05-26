@@ -1,0 +1,444 @@
+
+.feedbackPage {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.creativemarket.com/0.1.0/ps/2314942/1360/906/m1/fpnw/wm1/xljodoikcn4ozqbp22nrly94osfzetnkdrdaecmkfg2b1640qg96ilrcmcqswxhr-.jpg?1487776663&s=87ef286c1c4caf66fde5af925d496ec5');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.header {
+  text-align: center;
+  background-image: linear-gradient(135deg, #2e7d32, #4CAF50);
+  color: white;
+  width: 100%;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://image.freepik.com/free-photo/background-green-question-marks_59529-31.jpg');
+  background-size: cover;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.headerIcon {
+  margin-right: 12px;
+  stroke-width: 2px;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 50px;
+}
+
+/* Form Styles */
+.feedbackFormSection {
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-top: 5px solid #4CAF50;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.sectionIcon {
+  margin-right: 12px;
+  color: #4CAF50;
+}
+
+.feedbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedbackTextarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.05rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  resize: none;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.feedbackTextarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.submitButton {
+  padding: 14px 20px;
+  background-image: linear-gradient(to right, #2e7d32, #4CAF50);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.submitButton:active {
+  transform: translateY(1px);
+}
+
+.submitButton:disabled {
+  background-image: linear-gradient(to right, #a5d6a7, #c8e6c9);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.buttonIcon {
+  margin-right: 8px;
+  height: 18px;
+  width: 18px;
+}
+
+.thankYouMessage {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4CAF50;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.checkIcon {
+  color: #4CAF50;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thankYouMessage p {
+  margin: 0;
+  font-weight: 500;
+  color: #2e7d32;
+}
+
+/* Feedback Display Styles */
+.submittedFeedbackSection {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #4CAF50;
+}
+
+.feedbackList {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.feedbackList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.feedbackList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.feedbackList::-webkit-scrollbar-thumb {
+  background: #a5d6a7;
+  border-radius: 10px;
+}
+
+.feedbackList::-webkit-scrollbar-thumb:hover {
+  background: #4CAF50;
+}
+
+.feedbackItem {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #4CAF50;
+  transition: transform 0.2s ease;
+}
+
+.feedbackItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedbackItem p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.noFeedback {
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  padding: 20px;
+}
+
+
+.formStep {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputLabel {
+  font-weight: 600;
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputIcon {
+  width: 18px;
+  height: 18px;
+  color: #4CAF50;
+}
+
+.inputField {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  width: 100%;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+select.inputField {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.ratingContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.ratingStar {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.ratingStar:hover {
+  transform: scale(1.2);
+}
+
+.ratingStar.active {
+  color: #FFC107;
+}
+
+.formNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nextButton {
+  padding: 12px 24px;
+  background-image: linear-gradient(to right, #2e7d32, #4CAF50);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.nextButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+.nextButton:disabled {
+  background-image: linear-gradient(to right, #a5d6a7, #c8e6c9);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.backButton {
+  padding: 12px 24px;
+  background-color: #f5f5f5;
+  color: #666;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #e0e0e0;
+}
+
+.feedbackName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #2e7d32;
+}
+
+.feedbackMeta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.feedbackExperience {
+  text-transform: capitalize;
+}
+
+.feedbackRating {
+  color: #FFC107;
+  font-weight: bold;
+}
+
+.feedbackText {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+  }
+  
+  .feedbackFormSection,
+  .submittedFeedbackSection {
+    padding: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+}

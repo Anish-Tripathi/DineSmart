@@ -1,0 +1,127 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  padding: 0;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease-out;
+  border: 1px solid #e5e7eb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modalTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.modalTitle h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.warningIcon {
+  color: #f59e0b;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+  color: #111827;
+  background-color: #f3f4f6;
+}
+
+.modalContent {
+  padding: 24px;
+}
+
+.modalContent p {
+  margin: 0 0 24px;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancelButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.confirmButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #ef4444;
+  color: white;
+  border: 1px solid #dc2626;
+  transition: all 0.2s ease;
+}
+
+.confirmButton:hover {
+  background-color: #dc2626;
+}

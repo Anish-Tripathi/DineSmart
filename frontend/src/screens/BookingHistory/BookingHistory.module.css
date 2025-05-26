@@ -1,0 +1,488 @@
+/* BookingHistory.module.css */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f8faf8;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.creativemarket.com/0.1.0/ps/2314942/1360/906/m1/fpnw/wm1/xljodoikcn4ozqbp22nrly94osfzetnkdrdaecmkfg2b1640qg96ilrcmcqswxhr-.jpg?1487776663&s=87ef286c1c4caf66fde5af925d496ec5');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e6f2e6;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin: 0;
+  font-weight: 600;
+}
+
+.dashboardIcon {
+  width: 48px;
+  height: 48px;
+  background-color: #1a5d1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.bookingList {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .bookingList {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+
+.bookingCard {
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-left: 5px solid #2e8b57;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bookingCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bookingCard.cancelled {
+  border-left-color: #ff4d4f;
+  opacity: 0.8;
+}
+
+.bookingCard.completed {
+  border-left-color: #1a5d1a;
+}
+
+.bookingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e6f2e6;
+}
+
+.restaurantDetails h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: #1a5d1a;
+}
+
+.bookingMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bookingDate, .bookingTime, .bookingGuests {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bookingDate svg, .bookingTime svg, .bookingGuests svg {
+  color: #2e8b57;
+}
+
+.bookingDetails {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.addressInfo, .specialRequests {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.specialRequests span {
+  font-weight: 600;
+  color: #333;
+}
+
+.addressInfo svg, .specialRequests svg {
+  margin-top: 3px;
+  color: #2e8b57;
+  flex-shrink: 0;
+}
+
+.bookingFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e6f2e6;
+}
+
+.status {
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.status.pending{
+  border-color: #f5c542;
+  background: #f9edb1;
+   /* border: 1px solid #9aaea4; */
+}
+
+.status.confirmed {
+  background-color: #e6f7ec;
+  color: #2e8b57;
+  border: 1px solid #c3e6d4;
+}
+
+.status.cancelled {
+  background-color: #fff2f0;
+  color: #ff4d4f;
+  border: 1px solid #ffccc7;
+}
+
+.status.completed {
+  border-color: #909399;
+  background: #f2f2f2;
+  opacity: 0.8;
+  border: 1px solid #d4e9dd;
+}
+
+.cancelButton {
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: #ff4d4f;
+  border: 1px solid #ffccc7;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.cancelButton:hover {
+  background-color: #ff4d4f;
+  color: white;
+  box-shadow: 0 2px 5px rgba(255, 77, 79, 0.3);
+}
+
+.viewButton {
+  padding: 0.6rem 1.2rem;
+  background-color: #1a5d1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.viewButton:hover {
+  background-color: #2e8b57;
+  box-shadow: 0 2px 5px rgba(46, 139, 87, 0.3);
+}
+
+/* Empty state styling */
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.emptyIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  color: #2e7d32;
+  opacity: 0.7;
+}
+
+.emptyState h2 {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.emptyState p {
+  color: #777;
+  font-size: 1rem;
+}
+
+/* Loading state styling */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e6f2e6;
+  border-top: 3px solid #1a5d1a;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Alert styles */
+.alertError, .alertSuccess {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+.alertError {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  color: #ff4d4f;
+}
+
+.alertSuccess {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  color: #52c41a;
+}
+
+.alertIcon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.alertContent {
+  flex: 1;
+}
+
+.alertClose {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+  padding: 0;
+  margin-left: 0.8rem;
+}
+
+.alertClose:hover {
+  opacity: 1;
+}
+
+/* Cancel confirmation alert */
+.alertOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.alertBox {
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: scaleIn 0.3s ease-out;
+}
+
+.alertHeader {
+  background-color: #fff2f0;
+  color: #ff4d4f;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alertHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.alertHeader svg {
+  color: #ff4d4f;
+}
+
+.alertBody {
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.alertActions {
+  display: flex;
+  padding: 1rem 1.5rem;
+  background-color: #f8f8f8;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.alertCancel {
+  padding: 0.6rem 1.2rem;
+  background-color: white;
+  color: #1a5d1a;
+  border: 1px solid #1a5d1a;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.alertCancel:hover {
+  background-color: #f0f8f0;
+}
+
+.alertConfirm {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.alertConfirm:hover {
+  background-color: #ff7875;
+}
+
+.downloadButton {
+  background-color: #1a5d1a;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.downloadButton:hover {
+  background-color: #25a935;
+}
+
+/* Receipt styles */
+.receiptPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.receiptContainer {
+  position: relative;
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.closeButton:hover {
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

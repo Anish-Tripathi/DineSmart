@@ -1,0 +1,589 @@
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.creativemarket.com/0.1.0/ps/2314942/1360/906/m1/fpnw/wm1/xljodoikcn4ozqbp22nrly94osfzetnkdrdaecmkfg2b1640qg96ilrcmcqswxhr-.jpg?1487776663&s=87ef286c1c4caf66fde5af925d496ec5');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.faqContainer {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 20px 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(76, 175, 80, 0.1);
+}
+
+/* Header styles with improved gradient */
+.faqHeader {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 8px;
+  background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add leaf pattern overlay to header */
+.faqHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://image.freepik.com/free-photo/background-green-question-marks_59529-31.jpg");
+  opacity: 0.15;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subheading {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  font-weight: 400;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  position: relative;
+}
+
+/* Improved search container with floating effect */
+.searchContainer {
+  position: relative;
+  margin: 25px auto 0;
+  margin-bottom: 15px;
+  max-width: 430px;
+  transition: transform 0.3s ease;
+}
+
+.searchContainer:focus-within {
+  transform: translateY(-3px);
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 44px;
+  border: 2px solid rgba(76, 175, 80, 0.2);
+  border-radius: 50px;
+  font-size: 0.98rem;
+  transition: all 0.3s;
+  color: #2e7d32;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.15);
+  background-color: #ffffff;
+}
+
+.searchInput::placeholder {
+  color: #81c784;
+  font-weight: 300;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4caf50;
+  font-size: 1.2rem;
+}
+
+.clearButton {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #4caf50;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.clearButton:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Improved FAQ content styling */
+.faqContent {
+  margin-bottom: 50px;
+}
+
+.searchResults {
+  margin-top: 30px;
+}
+
+.searchResultsTitle {
+  color: #2e7d32;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e8f5e9;
+  font-weight: 600;
+}
+
+/* Section styling with improved hover effects */
+.section {
+  margin-bottom: 17px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(76, 175, 80, 0.1);
+  background-color: #ffffff;
+}
+
+.section:hover {
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15);
+  transform: translateY(-3px);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  padding: 13px 14px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionHeader:hover {
+  background: linear-gradient(135deg, #dcedc8 0%, #e8f5e9 100%);
+}
+
+/* Add subtle pattern to section headers */
+.sectionHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.sectionIcon {
+  font-size: 1.25rem;
+  margin-right: 11px;
+  color: #2e7d32;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionTitle {
+  color: #1b5e20;
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionToggle {
+  font-size: 1.12rem;
+  color: #4caf50;
+  font-weight: bold;
+  transition: transform 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  background-color: #ffffff;
+}
+
+/* FAQ Item styling with hover effects */
+.faqItem {
+  border-bottom: 1px solid #e8f5e9;
+  transition: all 0.3s ease;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem:hover {
+  background-color: #f9fff9;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 18px;
+  cursor: pointer;
+  font-size: 1.02rem;
+  color: #2e7d32;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.active .question {
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: #4caf50;
+  transition: transform 0.4s ease;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active .icon {
+  transform: rotate(180deg);
+  color: #1b5e20;
+}
+
+.answer {
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  max-height: 0;
+  color: #424242;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  padding: 0 18px;
+}
+
+.active .answer {
+  padding: 0 18px 14px;
+}
+
+.noResults {
+  text-align: center;
+  padding: 50px 30px;
+  background-color: #f1f8e9;
+  border-radius: 16px;
+  color: #2e7d32;
+  margin: 40px 0;
+  font-size: 1.1rem;
+  box-shadow: inset 0 0 15px rgba(76, 175, 80, 0.1);
+}
+
+/* Contact section with improved aesthetics */
+.contactSection {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center the text */
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+  border-radius: 14px;
+  padding: 26px 12px;
+  margin-top: 32px;
+  box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Add decorative pattern to contact section */
+.contactSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://image.freepik.com/free-photo/background-green-question-marks_59529-31.jpg");
+  opacity: 0.3;
+}
+
+.contactContent {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.contactSection h3 {
+  color: #ffffff;
+  font-size: 1.18rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contactSection p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
+  font-size: 1.01rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.contactButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.contactButton {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 0.97rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8rem;
+}
+
+.primaryButton {
+  background-color: #ffffff;
+  color: #2e7d32;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.primaryButton:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling */
+.icon svg, 
+.sectionToggle svg {
+  color: #4caf50;
+  transition: all 0.3s ease;
+}
+
+.active .icon svg {
+  color: #1b5e20;
+}
+
+.contactButton svg {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 175, 80, 0.6);
+  border-radius: 10px;
+  border: 3px solid #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(46, 125, 50, 0.8);
+}
+
+.moreFaqItem {
+  background-color: #e8f5e9; /* Light green */
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.moreFaqItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(76, 175, 80, 0.2);
+}
+
+.faqButton {
+  margin-top: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.faqButton:hover {
+  background-color: #43a047;
+}
+
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .contactSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px;
+  }
+  
+  .contactContent {
+    margin-bottom: 30px;
+  }
+  
+  .contactSection p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqContainer {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+  
+  .faqHeader {
+    padding: 25px 20px;
+  }
+  
+  .heading {
+    font-size: 2.2rem;
+  }
+  
+  .subheading {
+    font-size: 1.1rem;
+  }
+  
+  .sectionHeader {
+    padding: 18px 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+  
+  .question {
+    padding: 16px 20px;
+    font-size: 1.05rem;
+  }
+  
+  .answer {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+  
+  .active .answer {
+    padding: 0 20px 20px;
+  }
+  
+  .contactButtons {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .contactIllustration img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faqContainer {
+    padding: 15px;
+    margin: 20px 10px;
+    border-radius: 15px;
+  }
+  
+  .faqHeader {
+    padding: 20px 15px;
+    margin-bottom: 30px;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+  }
+  
+  .subheading {
+    font-size: 1rem;
+  }
+  
+  .searchInput {
+    padding: 15px 45px;
+    font-size: 0.95rem;
+  }
+  
+  .sectionHeader {
+    padding: 15px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+  
+  .question {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .answer {
+    padding: 0 15px;
+  }
+  
+  .active .answer {
+    padding: 0 15px 15px;
+  }
+  
+  .contactSection {
+    padding: 25px 20px;
+  }
+  
+  .contactSection h3 {
+    font-size: 1.5rem;
+  }
+  
+  .contactSection p {
+    font-size: 1rem;
+  }
+  
+  .contactButton {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+}

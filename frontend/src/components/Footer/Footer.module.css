@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary-green: #25A244;
+  --dark-green: #1E8035;
+  --light-green: #4CC66F;
+  --lightest-green: #E8F5E9;
+  --light-text: #FFFFFF;
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+  color: var(--light-text);
+  padding: 3rem 0 0;
+  position: relative;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.footContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.colLg6, .colLg3, .colMd6, .colMd12 {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 1rem;
+}
+
+.footerHeading {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--light-text);
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+}
+
+.footerHeading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--light-green);
+  border-radius: 2px;
+}
+
+.footerDescription {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.25rem;
+}
+
+.footerLinksName {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footerLinkName {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  margin-bottom: 0.65rem;
+  display: block;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  padding: 0.1rem;
+  
+}
+
+.footerLinkName:hover {
+  color: var(--light-text);
+  transform: translateX(5px);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.socialIcon {
+  color: var(--primary-green);
+  background-color: var(--light-text);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.socialIcon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfoFooter {
+  margin-bottom: 1.25rem;
+}
+
+.contactItem {
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contactIcon {
+  margin-right: 0.75rem;
+  color: var(--light-green);
+}
+
+.contactText {
+  line-height: 1.5;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent);
+  margin: 1rem 0;
+}
+
+.newsletterSection {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-top: 1rem;
+}
+
+.newsletterHeading {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.newsletterText {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.subscribeForm {
+  display: flex;
+  max-width: 100%;
+}
+
+.subscribeInput {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+.subscribeBtn {
+  background-color: var(--light-green);
+  color: var(--light-text);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 0 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.subscribeBtn:hover {
+  background-color: var(--dark-green);
+}
+
+.footerBottom {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .colLg6, .colLg3, .colMd6, .colMd12 {
+    margin-bottom: 0;
+  }
+  
+  .footerHeading {
+    font-size: 1.1rem;
+  }
+  
+  .socialIcons {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footContainer {
+    padding: 0 1rem;
+  }
+  
+  .subscribeForm {
+    flex-direction: column;
+  }
+  
+  .subscribeInput {
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscribeBtn {
+    border-radius: 4px;
+    padding: 0.6rem;
+  }
+}

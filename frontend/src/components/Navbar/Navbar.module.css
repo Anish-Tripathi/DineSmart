@@ -1,0 +1,741 @@
+/* Navbar Container */
+.navbarMain {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Brand Logo */
+.navbarBrand {
+  display: flex;
+  align-items: center;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbarLogo {
+  width: auto;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.navbarLogoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #28a745;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbarLogoText:hover {
+  color: #218838;
+}
+
+/* Mobile Toggle */
+.navToggle {
+  display: none;
+}
+
+.navToggleLabel {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navToggleLabel span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #333;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.navToggleLabel span::before,
+.navToggleLabel span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.navToggleLabel span::before {
+  top: -8px;
+}
+
+.navToggleLabel span::after {
+  top: 8px;
+}
+
+/* Navigation Menu */
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: 1.5rem;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navigation Links */
+.navLink {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s;
+  font-size: 0.9em;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Show tooltip on hover */
+.navLink:hover .tooltip
+ {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.navLink:hover {
+  color: #28a745;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #28a745;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.navDropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.dropdownToggle:hover {
+  color: #28a745;
+}
+
+.dropdownChevron {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  margin-left: 0.25rem;
+}
+
+.navDropdown:hover .dropdownChevron {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 0;
+  min-width: 220px;
+  z-index: 1000;
+  display: none;
+  font-size: 0.95rem;
+}
+
+.navDropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  white-space: nowrap;
+  position: relative;
+}
+
+.dropdownItem:hover {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.dropdownItem:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+  top:100%;
+ 
+}
+
+.dropdownIcon {
+  margin-right: 10px;
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  color: #28a745;
+}
+
+.userDropdown {
+  position: relative;
+  margin-left: 0.6rem;
+}
+
+.userProfileBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.userProfileBtn:hover {
+  background-color: #e9e9e9;
+}
+
+.userBtnText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #28a745;
+}
+
+.userIcon {
+  color: #28a745;
+  font-size: 1.2rem;
+}
+
+.userDropdownMenu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 220px;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.userDropdownHeader {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.userDropdownIcon {
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+.userDropdownName {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 170px;
+  text-transform: capitalize;
+}
+
+.userDropdownItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.linkLabel {
+  font-size: 0.8em;
+  margin-left: 5px;
+  color: #888;
+  font-style: italic;
+}
+
+.userDropdownItem:hover {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.userDropdownItem:last-child:hover {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.userDropdownDivider {
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 0.5rem 0;
+}
+
+.chevronUp {
+  transform: rotate(180deg);
+}
+
+/* Buttons */
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 6px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  border-color: #28a745;
+}
+
+.signupBtn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.signupBtn:hover {
+  background-color: #218838;
+  color: white;
+}
+
+.logoutBtn {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Cart Icon */
+.navCart {
+  position: relative;
+  color: #333;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  margin-left: 1.5rem;
+}
+
+.navCart:hover {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+/* Responsive modifications */
+@media (max-width: 992px) {
+  .userBtnText {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .userDropdownMenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    animation: none;
+    min-width: 100%;
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+  
+  .userProfileBtn {
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 6px;
+  }
+  
+  .userDropdown {
+    width: 100%;
+  }
+  
+  .navCart {
+    margin-right: 0;
+  }
+}
+.cartBadge {
+  position: absolute;
+  top: -5px;
+  /* right: -5px; */
+  font-size: 0.7rem;
+  padding: 0.15rem 0.3rem;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Icons */
+.navIcon {
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .navLinks {
+    gap: 1.5rem;
+    margin-left: 2rem;
+  }
+  
+  .navActions {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbarLogoText {
+    font-size: 1.5rem;
+  }
+  
+  .navLinks {
+    gap: 1.25rem;
+    margin-left: 1.5rem;
+  }
+  
+  .navActions {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbarMain {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .navToggleLabel {
+    display: block;
+  }
+  
+  .navMenu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 999;
+    gap: 1.5rem;
+  }
+  
+  .navToggle:checked ~ .navMenu {
+    transform: translateX(0);
+  }
+  
+  .navLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+    gap: 1rem;
+  }
+  
+  .navActions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .navDropdown {
+    width: 100%;
+  }
+  
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    display: none;
+    width: 100%;
+    padding-left: 1.5rem;
+  }
+  
+  .navToggle:checked ~ .navMenu .navDropdown:hover .dropdownMenu,
+  .navDropdown:focus-within .dropdownMenu {
+    display: block;
+  }
+  
+  .navbarLogo {
+    height: 40px;
+  }
+  
+  .navLink, .dropdownToggle {
+    padding: 0.5rem 0;
+  }
+}
+/* Add these new styles to your existing Navbar.module.css */
+
+/* Role indicator in user dropdown */
+.userDropdownRole {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 2px;
+  font-weight: 500;
+  display: block;
+}
+
+/* Restaurant owner specific menu items */
+.ownerMenuItem {
+  background-color: rgba(40, 167, 69, 0.05);
+  border-left: 3px solid #28a745;
+}
+
+/* Customer specific menu items */
+.customerMenuItem {
+  background-color: rgba(13, 110, 253, 0.05);
+  border-left: 3px solid #0d6efd;
+}
+
+/* Highlight active role-specific links */
+.navLinkActive {
+  color: #28a745 !important;
+  font-weight: 600;
+}
+
+.navLinkActive::after {
+  width: 100% !important;
+}
+
+/* Badge for restaurant owner */
+.ownerBadge {
+  background-color: #28a745;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+/* Badge for customer */
+.customerBadge {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+/* Restaurant management dropdown specific styles */
+.restaurantDropdown .dropdownMenu {
+  min-width: 250px;
+}
+
+.restaurantDropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+}
+
+.restaurantDropdownIcon {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for role-specific elements */
+@media (max-width: 768px) {
+  .userDropdownRole {
+    font-size: 0.7rem;
+  }
+  
+  .ownerBadge, .customerBadge {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+  }
+  
+  .restaurantDropdown .dropdownMenu {
+    min-width: 100%;
+  }
+}
+
+/* Animation for role transition */
+@keyframes roleTransition {
+  0% { opacity: 0; transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.roleTransition {
+  animation: roleTransition 0.3s ease-out;
+}
+@media (max-width: 576px) {
+  .navbarLogoText {
+    font-size: 1.3rem;
+  }
+  
+  .navbarLogo {
+    height: 35px;
+  }
+  
+  .navbarContainer {
+    padding: 0 10px;
+  }
+  
+  .navbarMain {
+    padding: 0.75rem 1rem;
+  }
+}

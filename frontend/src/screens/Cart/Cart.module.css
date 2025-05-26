@@ -1,0 +1,312 @@
+
+.cartContainerFullscreen {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:#25a244;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Empty cart fullscreen */
+.emptyCartFullscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  color:#25a244;
+}
+
+.cartIcon {
+  margin-bottom: 1rem;
+}
+
+.emptyTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:#25a244;
+  margin-bottom: 0.5rem;
+}
+
+.emptyMessage {
+  color: black;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+/* Cart header styles */
+.cartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #25a244;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.cartTitle {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.cartHeaderIcon {
+  margin-right: 0.75rem;
+}
+
+.itemCount {
+  background-color: white;
+  color: #25a244;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.restaurantInfoHeader {
+  background: #f9fbfa;
+  border-bottom: 1px solid #e4ebe4;
+  padding: 24px 32px 16px 32px;
+  margin: 0 0 20px 0;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 8px rgba(36, 160, 68, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.restaurantName {
+  font-size: 2rem;
+  color: #25a244;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.restaurantMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 1rem;
+  color: #4d604d;
+  line-height: 1.6;
+}
+
+.restaurantAddress {
+  font-weight: 500;
+  color: #388e3c;
+}
+
+.restaurantContact {
+  color: #3e5642;
+  font-style: italic;
+}
+
+/* Main content styles */
+.cartContent {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Table styles */
+.cartItems {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cartTableHeader {
+  background-color: #e6f7ee;
+  color: #25a244;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tableHeaderCell {
+  padding: 0.75rem 0.5rem;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tableCell {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #333;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.centerAlign {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.tableRowEven {
+  background-color: #f9f9f9;
+}
+
+.tableRowOdd {
+  background-color: white;
+}
+
+/* Food item styles - simplified without images */
+.foodItem {
+  display: flex;
+  align-items: center;
+}
+
+.foodName {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Price styles */
+.price {
+  font-weight: 600;
+}
+
+/* Remove button styles */
+.removeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e53e3e;
+  transition: color 0.2s;
+  padding: 0.25rem;
+}
+
+.removeButton:hover {
+  color: #c53030;
+}
+
+/* Order summary styles */
+.orderSummary {
+  border-top: 1px solid #e2e8f0;
+  padding: 1rem 1.5rem;
+  background-color: #f7fafc;
+}
+
+.summaryContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .summaryContent {
+    flex-direction: column;
+  }
+  
+  .actionButtons {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.summaryDetails {
+  margin-bottom: 1rem;
+}
+
+.summaryLine {
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.summaryValue {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.summaryTotal {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #25a244;
+  margin-top: 0.5rem;
+}
+
+/* Button styles */
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkoutButton, .printButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.checkoutButton {
+  background-color: #25a244;
+  color: white;
+}
+
+.checkoutButton:hover {
+  background-color: #1c8a36;
+}
+
+.printButton {
+  background-color: white;
+  color: #25a244;
+  border: 2px solid #25a244;
+}
+
+.printButton:hover {
+  background-color: #f0fdf4;
+}
+
+.buttonIcon {
+  margin-right: 0.5rem;
+}
+
+/* Security info styles */
+.securityInfo {
+  background-color: #e6f7ee;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.securityInfo p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.infoIcon {
+  color: #25a244;
+  margin-right: 0.5rem;
+}
+

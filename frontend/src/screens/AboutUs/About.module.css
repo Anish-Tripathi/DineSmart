@@ -1,0 +1,347 @@
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+}
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.creativemarket.com/0.1.0/ps/2314942/1360/906/m1/fpnw/wm1/xljodoikcn4ozqbp22nrly94osfzetnkdrdaecmkfg2b1640qg96ilrcmcqswxhr-.jpg?1487776663&s=87ef286c1c4caf66fde5af925d496ec5');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 1200px;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color:#389b3d;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #f1f1f1;
+}
+
+/* Base Styles */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mission Section */
+.missionContainer {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.missionContainer h2 {
+  font-size: 2.5rem;
+  color: #1a5d1a;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.missionContainer h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 80px;
+  background-color: #4caf50;
+}
+
+.missionText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Stats Section */
+.statsSection {
+ 
+  padding: 60px 20px;
+  margin: 60px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.statCard {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #4caf50;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.statIcon {
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a5d1a;
+  margin-bottom: 5px;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Features Section */
+.featuresSection {
+  margin: 80px 0;
+}
+
+.featuresSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a5d1a;
+  margin-bottom: 15px;
+}
+
+.featuresSubtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #4caf50;
+}
+
+.featureIconContainer {
+  background-color: #e8f5e9;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .featureIconContainer {
+  background-color: #4caf50;
+}
+
+.featureIcon {
+  color: #1a5d1a;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .featureIcon {
+  color: white;
+}
+
+.featureContent h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.featureContent p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  margin-top: 10px;
+  padding: 60px 20px;
+  border-radius: 10px;
+ 
+}
+
+.ctaSection h2 {
+  font-size: 2rem;
+  color: #1a5d1a;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.ctaButton:hover {
+  background-color: #1a5d1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.buttonIcon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover .buttonIcon {
+  transform: translateX(5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .missionContainer h2,
+  .featuresSection h2 {
+    font-size: 2rem;
+  }
+  
+  .statsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .featureCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .featureIconContainer {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .featureCard {
+    border-left: none;
+    border-top: 3px solid transparent;
+  }
+  
+  .featureCard:hover {
+    border-left: none;
+    border-top: 3px solid #4caf50;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 80vh;
+  }
+  
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+  
+  .statsContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}

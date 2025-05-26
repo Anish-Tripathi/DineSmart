@@ -1,0 +1,391 @@
+.restaurantCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 100%;
+  border: 1px solid #e0e0e0;
+}
+
+.restaurantCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #4CAF50;
+}
+
+.imageContainer {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.restaurantImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.restaurantCard:hover .restaurantImage {
+  transform: scale(1.03);
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(90deg, #43ea77 80%, #4CAF50 100%);
+  color: #fff;
+  padding: 5px 13px 5px 8px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.16);
+  z-index: 2;
+  gap: 6px;
+}
+.featuredIcon {
+  font-size: 1em;
+  margin-right: 3px;
+}
+
+.promotionBadge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #4CAF50, #66BB6A);
+  color: white;
+  padding: 6px 14px 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.22);
+  animation: promotionPulse 2s infinite;
+}
+.promotionBadgeIcon {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+@keyframes promotionPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.ratingBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.98);
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 4px rgba(44, 94, 49, 0.08);
+}
+
+.ratingIcon {
+  color: #FFC107;
+  font-size: 15px;
+}
+
+.ratingText {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2E7D32;
+}
+
+.cardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.restaurantName {
+  font-size: 19px;
+  font-weight: 700;
+  color: #2E7D32;
+  margin: 0;
+  flex: 1;
+  letter-spacing: 0.2px;
+}
+
+.tagContainer {
+  display: flex;
+  gap: 8px;
+  margin-left: 8px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.vegTag {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  border: 1px solid #C8E6C9;
+}
+
+.nonVegTag {
+  background-color: #FFEBEE;
+  color: #C62828;
+  border: 1px solid #FFCDD2;
+}
+
+.priceTag {
+  background-color: #F5F5F5;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* -- Restaurant Description -- */
+.restaurantDescription {
+  color: #616161;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.48;
+  font-weight: 400;
+}
+
+
+.promotionHighlight {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #f8fff8 40%, #e8ffe9 100%);
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(76, 175, 80, 0.07);
+  padding: 5px 5px;
+  margin-bottom: 10px;
+  gap: 14px;
+  animation: catchyGlow 3s ease-in-out infinite alternate;
+}
+.promotionHighlightLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promotionHighlightIcon {
+  font-size: 1rem;
+  color: #43ea77;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.09);
+}
+.promotionHighlightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.promotionHighlightDiscount {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1b5e20;
+  display: flex;
+  align-items: center;
+}
+.promotionHighlightSub {
+  font-size: 13px;
+  color: #388e3c;
+  font-weight: 500;
+  opacity: 0.92;
+}
+@keyframes catchyGlow {
+  0% { box-shadow: 0 2px 16px rgba(76, 175, 80, 0.07); }
+  100% { box-shadow: 0 4px 32px rgba(76, 175, 80, 0.15); }
+}
+
+.catchyPromotionContainer {
+  margin-bottom: 1rem;
+}
+
+/* --- Details --- */
+.restaurantDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #616161;
+}
+
+.detailIcon {
+  margin-right: 8px;
+  font-size: 15px;
+  color: #4CAF50;
+  min-width: 17px;
+}
+
+.detailText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cuisineContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.cuisineLabel {
+  font-size: 14px;
+  color: #616161;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.cuisineTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cuisineTag {
+  background-color: #F1F8E9;
+  color: #33691E;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* --- Footer and Buttons --- */
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.bookTableButton, .viewMenuButton {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.bookTableButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+.bookTableButton:hover {
+  background-color: #388E3C;
+  transform: translateY(-2px);
+}
+.viewMenuButton {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+}
+.viewMenuButton:hover {
+  background-color: #E8F5E9;
+  transform: translateY(-2px);
+}
+
+/* Additional existing styles */
+.spicyTag {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.glutenFreeTag {
+  background-color: #4ecdc4;
+  color: white;
+}
+
+.ingredientsContainer,
+.allergenContainer {
+  margin-top: 8px;
+}
+
+.ingredientTag {
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.allergenTag {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.allergenLabel {
+  color: #856404;
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 160px;
+  }
+  .promotionHighlight {
+    padding: 8px 10px;
+  }
+  .promotionHighlightIcon {
+    font-size: 19px;
+    padding: 3px;
+  }
+  .promotionHighlightDiscount {
+    font-size: 0.98em;
+  }
+  .cardFooter {
+    flex-direction: row;
+  }
+  .bookTableButton, .viewMenuButton {
+    width: auto;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}

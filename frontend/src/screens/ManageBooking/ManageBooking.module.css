@@ -1,0 +1,842 @@
+/* Variables */
+:root {
+  --dark-green: #1a5d1a;
+  --light-green: #239e53;
+  --very-light-green: #f0f9f2;
+  --white: #ffffff;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-900: #171717;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  padding: 1rem;
+   background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 50%, #ffffff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.creativemarket.com/0.1.0/ps/2314942/1360/906/m1/fpnw/wm1/xljodoikcn4ozqbp22nrly94osfzetnkdrdaecmkfg2b1640qg96ilrcmcqswxhr-.jpg?1487776663&s=87ef286c1c4caf66fde5af925d496ec5');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+/* Loading States */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+  color: var(--gray-600);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--gray-200);
+  border-top: 3px solid var(--light-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.errorState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.errorState h2 {
+  color: var(--gray-900);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.errorState p {
+  margin: 0;
+  max-width: 400px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  color: var(--dark-green);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+.dateSelector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--gray-100);
+}
+
+.dateInput {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-green);
+  outline: none;
+  cursor: pointer;
+}
+
+.dateDisplay {
+  font-size: 14px;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+
+/* Filters Section */
+.filtersSection {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.filtersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.filtersToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-green);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.filtersToggle:hover {
+  background: var(--gray-50);
+}
+
+.filtersBadge {
+  background: var(--light-green);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.chevron {
+  transition: transform 0.2s;
+}
+
+.chevronUp {
+  transform: rotate(180deg);
+}
+
+.clearFilters {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--gray-300);
+  color: var(--gray-600);
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clearFilters:hover {
+  background: var(--gray-50);
+  border-color: var(--gray-400);
+}
+
+.filtersContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.filtersExpanded {
+  max-height: 200px;
+}
+
+.searchFilter {
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.searchFilter {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filterIcon {
+  position: absolute;
+  left: 2rem;
+  color: var(--gray-400);
+  z-index: 1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid var(--gray-200);
+  border-radius: 10px;
+  font-size: 16px;
+  background: var(--gray-50);
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--light-green);
+  background: var(--white);
+}
+
+.selectFilters {
+  display: flex;
+  gap: 16px;
+  padding: 0 20px 20px;
+  flex-wrap: wrap;
+}
+
+.selectGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.selectIcon {
+  position: absolute;
+  left: 12px;
+  color: var(--gray-400);
+  z-index: 1;
+}
+
+.select {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid var(--gray-200);
+  border-radius: 10px;
+  font-size: 14px;
+  background: var(--gray-50);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--light-green);
+  background: var(--white);
+}
+
+/* Bookings Section */
+.bookingsSection {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.bookingsHeader {
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.sectionTitle {
+  color: var(--dark-green);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Bookings Grid */
+.bookingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.bookingCard {
+  background: var(--white);
+  border: 2px solid var(--gray-100);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.bookingCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--light-green);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.timeSlot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--very-light-green);
+  color: var(--dark-green);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.statusBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cardContent {
+  margin-bottom: 16px;
+}
+
+.guestName {
+  color: var(--dark-green);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.guestInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-600);
+  font-size: 14px;
+}
+
+.specialRequests {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: var(--gray-50);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--gray-700);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.viewButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--light-green);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex: 1;
+}
+
+.viewButton:hover {
+  background: var(--dark-green);
+}
+
+.quickActions {
+  display: flex;
+  gap: 8px;
+}
+
+.confirmButton,
+.cancelButton,
+.completeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.confirmButton {
+  background: var(--light-green);
+  color: var(--white);
+}
+
+.confirmButton:hover {
+  background: var(--dark-green);
+}
+
+.cancelButton {
+  background: #ff3b30;
+  color: var(--white);
+}
+
+.cancelButton:hover {
+  background: #d12b20;
+}
+
+.completeButton {
+  background: #007aff;
+  color: var(--white);
+}
+
+.completeButton:hover {
+  background: #0056cc;
+}
+
+/* Empty State - Continuation */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.emptyState h3 {
+  color: var(--gray-900);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px 0 8px 0;
+}
+
+.emptyState p {
+  margin: 0 0 20px 0;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.clearFiltersButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--light-green);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clearFiltersButton:hover {
+  background: var(--dark-green);
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-xl);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+}
+
+.modalTitle {
+  color: var(--dark-green);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--gray-600);
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  background: var(--gray-200);
+  color: var(--gray-900);
+}
+
+.modalContent {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.bookingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.infoSection {
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.infoSection h4 {
+  color: var(--dark-green);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gray-700);
+  font-size: 14px;
+}
+
+.infoRow svg {
+  color: var(--light-green);
+  flex-shrink: 0;
+}
+
+.specialRequestsText {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--very-light-green);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.specialRequestsText svg {
+  color: var(--light-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.specialRequestsText p {
+  margin: 0;
+  color: var(--gray-700);
+  line-height: 1.5;
+}
+
+.statusSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.currentStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.statusActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.statusButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  border: 2px solid var(--gray-200);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.statusButton:hover {
+  background: var(--light-green);
+  color: var(--white);
+  border-color: var(--light-green);
+}
+
+.statusButton.active {
+  background: var(--light-green);
+  color: var(--white);
+  border-color: var(--light-green);
+}
+
+.cancelStatusButton:hover {
+  background: #ff3b30;
+  border-color: #ff3b30;
+  color: var(--white);
+}
+
+.cancelStatusButton.active {
+  background: #ff3b30;
+  border-color: #ff3b30;
+  color: var(--white);
+}
+
+.completeStatusButton:hover {
+  background: #007aff;
+  border-color: #007aff;
+  color: var(--white);
+}
+
+.completeStatusButton.active {
+  background: #007aff;
+  border-color: #007aff;
+  color: var(--white);
+}
+
+.metaInfo {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray-200);
+  font-size: 12px;
+  color: var(--gray-600);
+}
+
+.metaInfo p {
+  margin: 4px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dateSelector {
+    justify-content: center;
+  }
+
+  .selectFilters {
+    flex-direction: column;
+  }
+
+  .selectGroup {
+    min-width: auto;
+  }
+
+  .bookingsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .cardActions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .quickActions {
+    justify-content: center;
+  }
+
+  .modal {
+    margin: 10px;
+    max-height: calc(100vh - 20px);
+  }
+
+  .modalContent {
+    padding: 16px;
+  }
+
+  .statusActions {
+    flex-direction: column;
+  }
+
+  .infoGrid {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .bookingCard {
+    padding: 16px;
+  }
+
+  .cardHeader {
+    margin-bottom: 12px;
+  }
+
+  .timeSlot {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .statusBadge {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .guestName {
+    font-size: 16px;
+  }
+
+  .viewButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .confirmButton,
+  .cancelButton,
+  .completeButton {
+    width: 32px;
+    height: 32px;
+  }
+}

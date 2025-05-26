@@ -1,0 +1,117 @@
+.notificationOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 50, 30, 0.13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+  animation: overlayFadeIn 0.25s;
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.notificationModal {
+  background: #fff;
+  padding: 2.2rem 2.5rem 2rem 2.2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 36px rgba(34, 139, 34, 0.18), 0 1.5px 4px rgba(60, 60, 60, 0.06);
+  max-width: 370px;
+  width: 92vw;
+  position: relative;
+  animation: modalSlideIn 0.28s cubic-bezier(.51,1.25,.53,1.11);
+  border: 1px solid #bdf5cf;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: scale(0.92) translateY(32px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.notificationContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.iconCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8f5e9 75%, #c8eed2 100%);
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 3px;
+  box-shadow: 0 1.5px 8px rgba(34, 139, 34, 0.13);
+}
+
+.successIcon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.message {
+  text-align: center;
+  color: #207443;
+  font-size: 1.13rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0;
+  margin-bottom: 0.1rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.notificationCloseButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.45rem;
+  color: #34996b;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.19s;
+}
+.notificationCloseButton:hover,
+.notificationCloseButton:focus {
+  background: #e8f5e9;
+  color: #166634;
+}
+
+@media (max-width: 480px) {
+  .notificationModal {
+    padding: 1.3rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+    border-radius: 12px;
+  }
+  .iconCircle {
+    width: 44px;
+    height: 44px;
+  }
+  .successIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .message {
+    font-size: 1rem;
+  }
+}

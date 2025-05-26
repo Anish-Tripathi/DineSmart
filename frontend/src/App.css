@@ -1,0 +1,53 @@
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* App container - ensures full width */
+.app-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Content container - ensures proper content flow */
+.content-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Main content - Remove transform scale which causes layout issues */
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Fix for desktop - use max-width instead of transform/scale */
+@media (min-width: 1024px) {
+  .main-content {
+    /* Remove transform: scale(0.9) - this causes layout issues */
+    max-width: 100%;
+  }
+  
+  /* Use container width constraints instead */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
