@@ -1,4 +1,4 @@
-# 🍽️ DineSmart - Smart Restaurant Discovery & Food Ordering Platform
+# DineSmart - Smart Restaurant Discovery & Food Ordering Platform
 
 <div align="center">
   <img src="./frontend/public/Logo.png" alt="DineSmart Logo" width="200"/>
