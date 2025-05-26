@@ -44,7 +44,7 @@ export default function Signup() {
 
       if (response.ok) {
         console.log("User created:", data);
-        toast.sucess("User created successfully! You can now log in.");
+        toast.success("User created successfully! You can now log in.");
         navigate("/login");
       } else {
         const errorMessages = data.errors

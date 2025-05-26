@@ -28,6 +28,7 @@
   margin: 1rem auto;
   border-radius: 1rem;
   padding: 1rem;
+   background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 50%, #ffffff 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
