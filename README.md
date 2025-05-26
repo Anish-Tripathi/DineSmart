@@ -417,10 +417,9 @@ dinesmart/
 ├── 📄 README.md
 ```
 
-```
-> **Note:**  
+## Note:  
 > - Inside `frontend/src/screens/`, `frontend/src/components/` and  each page is organized in its own folder, and typically contains its main `.js` file and a corresponding `.module.css` file for modular styling.
-```
+
 
 ---
 
