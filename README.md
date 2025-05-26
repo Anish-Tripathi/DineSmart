@@ -35,7 +35,11 @@
 
 🌐 **[Try DineSmart Live](https://dinesmart-demo.com)**
 
-### Demo Credentials
+🎥 **Demo Video:**
+
+https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
+
+
 
 ## 📱 Images
 
