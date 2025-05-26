@@ -10,7 +10,7 @@
 
 ### 🎯 Key Highlights
 
--- **Fully Role-Based Single Page Application (SPA)**  
+**Fully Role-Based Single Page Application (SPA)**  
  Supports different user roles with tailored interfaces and access control, including customers and restaurant owners.
 
 - **Advanced Filtering, Searching, and Sorting**  
