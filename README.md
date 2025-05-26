@@ -1,12 +1,8 @@
 # 🍽️ DineSmart - Smart Restaurant Discovery & Food Ordering Platform
 
 <div align="center">
-  <img src="./assets/logo.png" alt="DineSmart Logo" width="200"/>
-  
-  [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
-  [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
-  [![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-brightgreen.svg)](https://mongodb.com/)
-  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+  <img src="./frontend/public/Logo.png" alt="DineSmart Logo" width="200"/>
+ 
 </div>
 
 ## 📖 Overview
@@ -15,11 +11,23 @@
 
 ### 🎯 Key Highlights
 
-- **Smart Discovery**: AI-powered restaurant recommendations with location-based filtering
-- **Dual Experience**: Separate optimized interfaces for customers and restaurant owners
-- **Real-time Operations**: Live order tracking and instant status updates
-- **Secure & Scalable**: JWT authentication with OTP verification and captcha protection
-- **Mobile-First Design**: Responsive UI that works seamlessly across all devices
+-- **Fully Role-Based Single Page Application (SPA)**  
+ Supports different user roles with tailored interfaces and access control, including customers and restaurant owners.
+
+- **Advanced Filtering, Searching, and Sorting**  
+  Helps users quickly find restaurants and menu items based on multiple criteria for an optimized discovery experience.
+
+- **Nutritional Tagging, Allergen Information & Dietary Filters**  
+  Menus display detailed nutritional and allergen info, allowing users to filter dishes according to dietary preferences and restrictions.
+
+- **Integrated Coupon & Discount System**  
+  Real-time price updates during ordering reflect applied coupons and discounts seamlessly.
+
+- **Realistic User Journey for Dine-In and Delivery**  
+  Comprehensive flow covering browsing, ordering, payment, and order tracking for both dine-in and delivery services.
+
+- **Dynamic Restaurant Dashboard for Owners**  
+  Provides analytics, order management, and operational insights to help restaurant owners optimize their services.
 
 ---
 
@@ -29,34 +37,61 @@
 
 ### Demo Credentials
 
-**Customer Account:**
-
-- Email: `customer@demo.com`
-- Password: `demo123`
-
-**Restaurant Owner:**
-
-- Email: `owner@demo.com`
-- Password: `demo123`
-
----
-
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="./assets/screenshots/homepage.png" alt="Homepage" width="800"/>
-  <p><em>Homepage with smart restaurant discovery</em></p>
+  <img src="./screenshots/login.png" alt="Login" width="400"/>
+  <img src="./screenshots/signup.png" alt="Signup" width="400"/>
+  <img src="./screenshots/forgot-password.png" alt="Forgot" width="400"/>
+  <p><em>Login, Sign Up and Forgot Password</em></p>
 </div>
 
 <div align="center">
-  <img src="./assets/screenshots/restaurant-list.png" alt="Restaurant List" width="400"/>
-  <img src="./assets/screenshots/menu-view.png" alt="Menu View" width="400"/>
-  <p><em>Restaurant listings and detailed menu view</em></p>
+  <img src="./screenshots/homepage.png" alt="Homepage" width="400"/>
+  <p><em>Homepage with smart restaurant discovery and navigation</em></p>
+</div>
+<div align="center">
+  <img src="./screenshots/restaurant-list.png" alt="Customer Menu" width="400"/>
+  <p><em>Customer view: Menu browsing with detailed items and options</em></p>
+   <img src="./screenshots/customer-menu.png" alt="Customer Menu" width="400"/>
+  <p><em>Customer view: Menu browsing with detailed items and options</em></p>
 </div>
 
 <div align="center">
-  <img src="./assets/screenshots/order-tracking.png" alt="Order Tracking" width="800"/>
-  <p><em>Real-time order tracking interface</em></p>
+ <img src="./screenshots/cart.png" alt="Cart" width="400"/>
+  <p><em>Customer view: Cart overview </em></p>
+  <img src="./screenshots/cart-payment.png" alt="Cart and Payment" width="400"/>
+  <p><em>Customer view: 3 steps secure payment integration with order summary</em></p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/order-history.png" alt="Order History" width="400"/>
+  <img src="./screenshots/order-tracking.png" alt="Table Booking & History" width="400"/>
+  <p><em>Customer view: Order history and Tracking</em></p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/booking-table.png" alt="Order History" width="400"/>
+  <img src="./screenshots/booking-tracking.png" alt="Table Booking & History" width="400"/>
+  <p><em>Customer view: Table Booking and Tracking</em></p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400"/>
+  <img src="./screenshots/owner-restaurant-management.png" alt="Restaurant Management" width="400"/>
+  <p><em>Owner view: Adding and managing restaurants</em></p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400"/>
+  <img src="./screenshots/owner-order-booking-management.png" alt="Order and Booking Management" width="400"/>
+   <img src="./screenshots/owner-booking-management.png" alt="Order and Booking Management" width="400"/>
+  <p><em>Owner view: Managing menus, orders, and bookings</em></p>
+</div>
+
+<div align="center">
+  <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400"/>
+  <p><em>Owner view: Dashboard overview with key statistics and controls</em></p>
 </div>
 
 ---
@@ -187,29 +222,29 @@
 
 ### **Frontend**
 
-| Technology                                                                                                     | Purpose             | Version |
-| -------------------------------------------------------------------------------------------------------------- | ------------------- | ------- |
-| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)                      | UI Framework        | 18.2.0+ |
-| ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white) | Client-side Routing | 6.8.0+  |
-| ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat&logo=css3&logoColor=white)           | Styling             | -       |
-| ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)                      | HTTP Client         | 1.3.0+  |
-| ![Lucide React](https://img.shields.io/badge/Lucide-F56565?style=flat&logo=lucide&logoColor=white)             | Icons               | Latest  |
+| Technology   | Purpose             | Version |
+| ------------ | ------------------- | ------- |
+| React        | UI Framework        | 18.2.0+ |
+| React Router | Client-side Routing | 6.8.0+  |
+| CSS Modules  | Styling             | -       |
+| Axios        | HTTP Client         | 1.3.0+  |
+| Lucide React | Icons               | Latest  |
 
 ### **Backend**
 
-| Technology                                                                                            | Purpose             | Version |
-| ----------------------------------------------------------------------------------------------------- | ------------------- | ------- |
-| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)       | Runtime Environment | 18.0+   |
-| ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white) | Web Framework       | 4.18.0+ |
-| ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)       | Database            | 6.0+    |
-| ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=flat&logo=mongoose&logoColor=white)    | ODM                 | 7.0+    |
-| ![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens&logoColor=white)       | Authentication      | 9.0+    |
+| Technology | Purpose             | Version |
+| ---------- | ------------------- | ------- |
+| Node.js    | Runtime Environment | 18.0+   |
+| Express.js | Web Framework       | 4.18.0+ |
+| MongoDB    | Database            | 6.0+    |
+| Mongoose   | ODM                 | 7.0+    |
+| JWT        | Authentication      | 9.0+    |
 
 ### **Additional Tools**
 
 - **Security**: Bcrypt, CAPTCHA, Express Validator
 - **Communication**: Nodemailer for email services
-- **Authentication**: Firebase Auth & Admin SDK
+- **Authentication**: Admin SDK
 - **Development**: dotenv, cors, nodemon
 
 ---
@@ -238,7 +273,7 @@ cd dinesmart
 npm install
 
 # Install frontend dependencies
-cd client
+cd frontend
 npm install
 cd ..
 ```
@@ -262,10 +297,6 @@ EMAIL_SERVICE=gmail
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-specific-password
 
-# Firebase Configuration
-FIREBASE_PROJECT_ID=your-firebase-project-id
-FIREBASE_PRIVATE_KEY=your-firebase-private-key
-FIREBASE_CLIENT_EMAIL=your-firebase-client-email
 
 # Application Settings
 PORT=5000
@@ -275,9 +306,6 @@ CLIENT_URL=http://localhost:3000
 # CAPTCHA Configuration
 CAPTCHA_SECRET=your-captcha-secret-key
 
-# Payment Gateway (if applicable)
-PAYMENT_GATEWAY_KEY=your-payment-gateway-key
-PAYMENT_GATEWAY_SECRET=your-payment-gateway-secret
 ```
 
 ### 4. Database Setup
@@ -287,60 +315,58 @@ PAYMENT_GATEWAY_SECRET=your-payment-gateway-secret
 mongod
 
 # Seed the database with sample data (optional)
-npm run seed
+cd backend
+cd config
+node seed.js
 ```
 
 ### 5. Start the Application
 
 ```bash
 # Start backend server (runs on port 5000)
-npm run server
+cd backend
+nodemon index.js
 
 # In a new terminal, start frontend (runs on port 3000)
-npm run client
+cd frontend
+npm start
 
-# Or start both concurrently
-npm run dev
-```
 
 ### 6. Access the Application
 
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:5000
-- **API Documentation**: http://localhost:5000/api/docs
+
 
 ---
 
 ## 📁 Project Structure
 
 ```
+
 dinesmart/
-├── 📁 client/                    # React frontend
-│   ├── 📁 public/
-│   ├── 📁 src/
-│   │   ├── 📁 components/        # Reusable UI components
-│   │   ├── 📁 pages/            # Page components
-│   │   ├── 📁 hooks/            # Custom React hooks
-│   │   ├── 📁 services/         # API service calls
-│   │   ├── 📁 context/          # React context providers
-│   │   ├── 📁 utils/            # Utility functions
-│   │   ├── 📁 styles/           # CSS modules and global styles
-│   │   └── 📁 assets/           # Images, icons, etc.
-│   └── 📄 package.json
-├── 📁 server/                   # Node.js backend
-│   ├── 📁 controllers/          # Route controllers
-│   ├── 📁 models/              # Mongoose schemas
-│   ├── 📁 routes/              # Express routes
-│   ├── 📁 middleware/          # Custom middleware
-│   ├── 📁 services/            # Business logic services
-│   ├── 📁 utils/               # Utility functions
-│   ├── 📁 config/              # Configuration files
-│   └── 📄 server.js            # Entry point
-├── 📁 assets/                  # Project assets (screenshots, etc.)
+├── 📁 frontend/ # React frontend
+│ ├── 📁 public/
+│ ├── 📁 src/
+│ │ ├── 📁 components/ # Reusable UI components
+│ │ ├── 📁 pages/ # Page components
+│ │ ├── 📁 context/ # React context providers
+│ │ ├── 📁 utils/ # Utility functions
+│ └── 📄 package.json
+├── 📁 server/ # Node.js backend
+│ ├── 📁 controllers/ # Route controllers
+│ ├── 📁 models/ # Mongoose schemas
+│ ├── 📁 routes/ # Express routes
+│ ├── 📁 middleware/ # Custom middleware
+│ ├── 📁 services/ # Business logic services
+│ ├── 📁 utils/ # Utility functions
+│ ├── 📁 config/ # Configuration files
+│ └── 📄 index.js # Entry point
+├── 📁 screenshots/ # Project images (screenshots, etc.)
 ├── 📄 README.md
 ├── 📄 package.json
-└── 📄 .env.example
-```
+
+````
 
 ---
 
@@ -349,13 +375,13 @@ dinesmart/
 ### Authentication Endpoints
 
 ```http
-POST /api/auth/register          # User registration
+POST /api/auth/createuser        # User registration
 POST /api/auth/login             # User login
 POST /api/auth/logout            # User logout
 POST /api/auth/forgot-password   # Password reset request
 POST /api/auth/reset-password    # Password reset confirmation
 GET  /api/auth/verify-token      # Token verification
-```
+````
 
 ### Customer Endpoints
 
@@ -391,73 +417,6 @@ PUT    /api/owner/coupons/:id    # Update coupon
 
 ---
 
-## 🧪 Testing
-
-### Run Tests
-
-```bash
-# Run all tests
-npm test
-
-# Run tests with coverage
-npm run test:coverage
-
-# Run tests in watch mode
-npm run test:watch
-
-# Run specific test suite
-npm test -- --grep "Authentication"
-```
-
-### Test Coverage
-
-Our comprehensive test suite covers:
-
-- ✅ Authentication & Authorization
-- ✅ API Endpoints
-- ✅ Database Operations
-- ✅ Frontend Components
-- ✅ Integration Tests
-
----
-
-## 🚀 Deployment
-
-### Using Heroku
-
-```bash
-# Install Heroku CLI
-npm install -g heroku
-
-# Login to Heroku
-heroku login
-
-# Create Heroku app
-heroku create dinesmart-app
-
-# Set environment variables
-heroku config:set NODE_ENV=production
-heroku config:set MONGODB_URI=your_production_mongodb_uri
-heroku config:set JWT_SECRET=your_production_jwt_secret
-
-# Deploy
-git push heroku main
-```
-
-### Using Docker
-
-```dockerfile
-# Dockerfile included in the project
-docker build -t dinesmart .
-docker run -p 5000:5000 dinesmart
-```
-
-### Environment Variables for Production
-
-Ensure all environment variables are properly set in your production environment. Refer to `.env.example` for the complete list.
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
@@ -479,48 +438,9 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Team
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://github.com/yourusername.png" width="100px;" alt="Your Name"/><br>
-        <sub><b>Your Name</b></sub><br>
-        <sub>Full Stack Developer</sub>
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
-## 📞 Support & Contact
-
-- 📧 **Email**: support@dinesmart.com
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/yourusername/dinesmart/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/dinesmart/discussions)
-- 📖 **Documentation**: [Wiki](https://github.com/yourusername/dinesmart/wiki)
-
----
-
 ## 🙏 Acknowledgments
 
-- Thanks to all contributors who helped make DineSmart possible
-- Inspiration from modern food delivery platforms
+- Inspiration from modern food delivery platforms like zomato and swiggy.
 - Open source community for amazing tools and libraries
 
 ---
-
-<div align="center">
-  <p>Made with ❤️ by the DineSmart Team</p>
-  <p>
-    <a href="#top">Back to Top ⬆️</a>
-  </p>
-</div>
