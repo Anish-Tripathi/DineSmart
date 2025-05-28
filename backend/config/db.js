@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const mongodb = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/DineSmart');
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("Database connected");
 
         const fetchedData = await mongoose.connection.db.collection("food_items").find({}).toArray();
