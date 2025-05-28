@@ -13,7 +13,7 @@ import bookingRoutes from "./routes/bookingRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 10000;
 
 // Connect to MongoDB
 mongodb();
