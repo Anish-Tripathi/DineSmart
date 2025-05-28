@@ -32,7 +32,7 @@
 
 ## 🚀 Live Demo
 
-🌐 **[Try DineSmart Live](https://dinesmart-demo.com)**
+🌐 **[Try DineSmart Live](https://dinesmart-1.onrender.com/)**
 
 🎥 **Demo Video:**
 
