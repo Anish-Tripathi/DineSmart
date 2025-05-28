@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="./frontend/public/Logo.png" alt="DineSmart Logo" width="200"/>
- 
 </div>
 
 ## 📖 Overview
@@ -11,7 +10,7 @@
 
 ### 🎯 Key Highlights
 
--- **Fully Role-Based Single Page Application (SPA)**  
+**Fully Role-Based Single Page Application (SPA)**  
  Supports different user roles with tailored interfaces and access control, including customers and restaurant owners.
 
 - **Advanced Filtering, Searching, and Sorting**  
@@ -38,8 +37,6 @@
 🎥 **Demo Video:**
 
 https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
-
-
 
 ## 📱 Images
 
@@ -314,7 +311,6 @@ EMAIL_SERVICE=gmail
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-specific-password
 
-
 # Application Settings
 PORT=5000
 NODE_ENV=development
@@ -322,7 +318,6 @@ CLIENT_URL=http://localhost:3000
 
 # CAPTCHA Configuration
 CAPTCHA_SECRET=your-captcha-secret-key
-
 ```
 
 ### 4. Database Setup
@@ -347,11 +342,9 @@ nodemon index.js
 # In a new terminal, start frontend (runs on port 3000)
 cd frontend
 npm start
+```
 
-
-
-
-````
+---
 
 ## 🔌 API Documentation
 
@@ -400,9 +393,39 @@ PUT    /api/owner/coupons/:id    # Update coupon
 
 ---
 
+## 📁 Project Structure
+
+```
+dinesmart/
+├── 📁 frontend/                    # React frontend
+│   ├── 📁 public/
+│   ├── 📁 src/
+│   │   ├── 📁 components/        # Reusable UI components
+│   │   ├── 📁 pages/            # Page components (each page has its own folder with .js and .module.css files)
+│   │   ├── 📁 context/          # React context providers
+│   └── 📄 package.json
+├── 📁 backend/                   # Node.js backend
+│   ├── 📁 controllers/          # Route controllers
+│   ├── 📁 models/              # Mongoose schemas
+│   ├── 📁 routes/              # Express routes
+│   ├── 📁 middleware/          # Custom middleware
+│   ├── 📁 services/            # Business logic services
+│   ├── 📁 utils/               # Utility functions
+│   ├── 📁 config/              # Configuration files
+│   └── 📄 server.js            # Entry point
+├── 📁 screenshots/                  # Project assets (screenshots, etc.)
+├── 📄 README.md
+```
+
+## Note:  
+> - Inside `frontend/src/screens/`, `frontend/src/components/` and  each page is organized in its own folder, and typically contains its main `.js` file and a corresponding `.module.css` file for modular styling.
+
+
+---
+
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! 
 
 ### Development Workflow
 
