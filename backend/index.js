@@ -21,7 +21,10 @@ mongodb();
 // CORS configuration
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",           // For local development
+      "https://dinesmart-1.onrender.com" // Your production frontend URL
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "auth-token"],
