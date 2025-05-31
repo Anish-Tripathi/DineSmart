@@ -53,7 +53,7 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
 ## 🏠 Homepage
 
-<h3 align="center">Homepages</h3>
+<h3 align="center"></h3>
 
 <table align="center">
   <tr>
