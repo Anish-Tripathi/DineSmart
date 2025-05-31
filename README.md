@@ -53,9 +53,17 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
 ## 🏠 Homepage
 
-<div align="center" style="margin-bottom: 20px;">
-  <img src="./screenshots/homepage.png" alt="Homepage" width="400" height="250" style="object-fit: cover;" />
-  <p><em>Smart restaurant discovery and navigation</em></p>
+<h3 align="center">Homepages</h3>
+
+<div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 20px;">
+  <div align="center">
+    <img src="./screenshots/homepage-customer.png" alt="Customer Homepage" width="400" height="250" style="object-fit: cover;" />
+    <p><em>Personalized Restaurant Discovery for Customers</em></p>
+  </div>
+  <div align="center">
+    <img src="./screenshots/homepage-owner.png" alt="Owner Homepage" width="400" height="250" style="object-fit: cover;" />
+    <p><em>Powerful Dashboard for Restaurant Owners</em></p>
+  </div>
 </div>
 
 ---
@@ -417,15 +425,15 @@ dinesmart/
 ├── 📄 README.md
 ```
 
-## Note:  
-> - Inside `frontend/src/screens/`, `frontend/src/components/` and  each page is organized in its own folder, and typically contains its main `.js` file and a corresponding `.module.css` file for modular styling.
+## Note:
 
+> - Inside `frontend/src/screens/`, `frontend/src/components/` and each page is organized in its own folder, and typically contains its main `.js` file and a corresponding `.module.css` file for modular styling.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! 
+We welcome contributions!
 
 ### Development Workflow
 
