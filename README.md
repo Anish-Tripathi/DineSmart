@@ -55,16 +55,21 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
 <h3 align="center">Homepages</h3>
 
-<div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 20px;">
-  <div align="center">
-    <img src="./screenshots/homepage-customer.png" alt="Customer Homepage" width="400" height="250" style="object-fit: cover;" />
-    <p><em>Personalized Restaurant Discovery for Customers</em></p>
-  </div>
-  <div align="center">
-    <img src="./screenshots/homepage-owner.png" alt="Owner Homepage" width="400" height="250" style="object-fit: cover;" />
-    <p><em>Powerful Dashboard for Restaurant Owners</em></p>
-  </div>
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./screenshots/homepage-customer.png" alt="Customer Homepage" width="400" height="250"/>
+      <br/>
+      <em>Personalized Restaurant Discovery for Customers</em>
+    </td>
+    <td align="center">
+      <img src="./screenshots/homepage-owner.png" alt="Owner Homepage" width="400" height="250"/>
+      <br/>
+      <em>Powerful Dashboard for Restaurant Owners</em>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
