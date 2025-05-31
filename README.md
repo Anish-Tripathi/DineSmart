@@ -46,6 +46,7 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
   <img src="./screenshots/login.png" alt="Login" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
   <img src="./screenshots/signup.png" alt="Signup" width="400" height="250" style="object-fit: cover; margin-right: 10px;" />
   <img src="./screenshots/forgot-password.png" alt="Forgot" width="400" height="250" style="object-fit: cover;" />
+  <img src="./screenshots/reset-password.png" alt="Forgot" width="400" height="250" style="object-fit: cover;" />
   <p><em>Login, Sign Up and Forgot Password</em></p>
 </div>
 
