@@ -144,7 +144,7 @@ coming soon ...
 <div align="center">
   <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400" height="250"/>
   <img src="./screenshots/owner-restaurant-management.png" alt="Manage Restaurant" width="400" height="250"/>
-  <br/><em>Add and manage restaurant and menu details</em>
+  <br/><em>Add and manage restaurant details</em>
 </div>
 
 <div align="center">
