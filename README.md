@@ -38,7 +38,6 @@
 
 https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
-cat << 'EOF' >> README.md
 
 ---
 
@@ -185,8 +184,7 @@ cat << 'EOF' >> README.md
   <br/><em>Frequently Asked Questions and Feedback Form</em>
 </div>
 
-EOF
-
+---
 
 ## ✨ Features
 
