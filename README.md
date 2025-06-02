@@ -38,7 +38,11 @@
 
 https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
-## 📱 Images
+cat << 'EOF' >> README.md
+
+---
+
+## 📸 Images
 
 ### 🔐 Authentication Flow
 
@@ -63,18 +67,18 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
       <br/><em>Personalized Restaurant Discovery</em>
     </td>
     <td align="center">
-      <img src="./screenshots/about.png" alt="About Page" width="400" height="250"/>
-      <br/><em>About Us – Our Mission</em>
+      <img src="./screenshots/homepage-owner.png" alt="Owner Homepage" width="400" height="250"/>
+      <br/><em>Restaurant Owner Dashboard</em>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="./screenshots/features.png" alt="Features Page" width="400" height="250"/>
-      <br/><em>Feature Overview</em>
+     <td align="center">
+      <img src="./screenshots/about.png" alt="About Page" width="400" height="250"/>
+      <br/><em>About Us – Our Mission</em>
     </td>
     <td align="center">
-      <img src="./screenshots/homepage-owner.png" alt="Owner Homepage" width="400" height="250"/>
-      <br/><em>Restaurant Owner Dashboard</em>
+      <img src="./screenshots/features.png" alt="Features Page" width="400" height="250"/>
+      <br/><em>Role Based Feature Overview</em>
     </td>
   </tr>
 </table>
@@ -88,20 +92,20 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 </div>
 
 <div align="center">
-  <img src="./screenshots/item-customization.png" alt="Item Customization" width="400" height="250"/>
-  <img src="./screenshots/add-to-cart.png" alt="Add to Cart" width="400" height="250"/>
+  <img src="./screenshots/nutrition.png" alt="Item Customization" width="400" height="250"/>
+  <img src="./screenshots/cart.png" alt="Add to Cart" width="400" height="250"/>
   <br/><em>Customize items and add them to cart</em>
 </div>
 
 <div align="center">
-  <img src="./screenshots/cart.png" alt="Cart" width="400" height="250"/>
+  <img src="./screenshots/cart-details.png" alt="Cart" width="400" height="250"/>
   <img src="./screenshots/cart-payment.png" alt="Cart Payment" width="400" height="250"/>
   <br/><em>Cart overview and secure payment</em>
 </div>
 
 <div align="center">
-  <img src="./screenshots/order-confirmation.png" alt="Order Confirmation" width="400" height="250"/>
-  <img src="./screenshots/thank-you.png" alt="Thank You Page" width="400" height="250"/>
+  <img src="./screenshots/cart-confirmation.png" alt="Order Confirmation" width="400" height="250"/>
+  <img src="./screenshots/cart-reciept.png" alt="Thank You Page" width="400" height="250"/>
   <br/><em>Order confirmation and success message</em>
 </div>
 
@@ -109,7 +113,7 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
 <div align="center">
   <img src="./screenshots/booking-table.png" alt="Table Booking" width="400" height="250"/>
-  <img src="./screenshots/booking-details.png" alt="Booking Details" width="400" height="250"/>
+  <img src="./screenshots/booking-form.png" alt="Booking Details" width="400" height="250"/>
   <br/><em>Book a table and fill in details</em>
 </div>
 
@@ -128,8 +132,8 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 </div>
 
 <div align="center">
+  <img src="./screenshots/order-reciept.png" alt="Order Feedback" width="400" height="250"/>
   <img src="./screenshots/order-tracking.png" alt="Order Tracking" width="400" height="250"/>
-  <img src="./screenshots/order-feedback.png" alt="Order Feedback" width="400" height="250"/>
   <br/><em>Track delivery and leave feedback</em>
 </div>
 
@@ -146,23 +150,30 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 </div>
 
 <div align="center">
+  <img src="./screenshots/owner-menu-edit-restaurant.png" alt="Add Restaurant" width="400" height="250"/>
+  <img src="./screenshots/owner-dashboard.png" alt="Manage Restaurant" width="400" height="250"/>
+  <br/><em>Add and manage restaurant details</em>
+</div>
+
+<div align="center">
   <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400" height="250"/>
-  <img src="./screenshots/owner-menu-items.png" alt="Manage Menu Items" width="400" height="250"/>
+  <img src="./screenshots/owner-add-menu-items.png" alt="Manage Menu Items" width="400" height="250"/>
   <br/><em>Manage menus and menu items</em>
 </div>
 
 #### 📋 Order & Booking Controls
 
 <div align="center">
-  <img src="./screenshots/owner-order-booking-management.png" alt="Order Management" width="400" height="250"/>
-  <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" height="250"/>
-  <br/><em>Track customer orders and table bookings</em>
+  <img src="./screenshots/owner-order-management.png" alt="Order Management" width="400" height="250"/>
+  <img src="./screenshots/owner-order-details.png" alt="Owner Dashboard" width="400" height="250"/>
+  <br/><em>Control customer order and real time status</em>
 </div>
 
 <div align="center">
-  <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400" height="250"/>
-  <img src="./screenshots/owner-analytics.png" alt="Owner Analytics" width="400" height="250"/>
-  <br/><em>Dashboard with key stats and analytics</em>
+  <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" height="250"/>
+ 
+  <img src="./screenshots/owner-booking-details.png" alt="Owner Analytics" width="400" height="250"/>
+  <br/><em>Control table bookings and real time status</em>
 </div>
 
 ---
@@ -179,6 +190,12 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
   <img src="./screenshots/faq.png" alt="FAQ" width="400" height="250"/>
   <img src="./screenshots/feedback.png" alt="Feedback Page" width="400" height="250"/>
   <br/><em>Frequently Asked Questions and Feedback Form</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/contact-us.png" alt="FAQ" width="400" height="250"/>
+  <img src="./screenshots/footer.png" alt="Feedback Page" width="400" height="250"/>
+  <br/><em>Contact-Us and Role based footer</em>
 </div>
 
 EOF
@@ -201,13 +218,13 @@ EOF
 - **Interactive Food Carousel**: Stunning zoom effects showcasing featured dishes
 - **Intelligent Search**: Find restaurants by dish name, location, or cuisine
 - **Advanced Filtering System**:
-  - Location-based (current location + 10km radius)
-  - Dietary preferences (Veg/Jain options)
-  - Price range filtering
-  - Ratings and reviews
-  - Cuisine type selection
-  - Delivery time estimation
-  - Smart sorting (price/rating: high-to-low, low-to-high)
+  - 📍 Location-based (current location + 10km radius)
+  - 🥬 Dietary preferences (Veg/Jain options)
+  - 💰 Price range filtering
+  - ⭐ Ratings and reviews
+  - 🍜 Cuisine type selection
+  - ⏱️ Delivery time estimation
+  - 📊 Smart sorting (price/rating: high-to-low, low-to-high)
 
 #### 🍽️ **Restaurant & Menu Management**
 
