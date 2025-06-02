@@ -234,7 +234,7 @@ coming soon ...
   - Price range filtering
   - Ratings and reviews
   - Cuisine type selection
-  - ⏱Delivery time estimation
+  - Delivery time estimation
   - Smart sorting (price/rating: high-to-low, low-to-high)
 
 #### 🍽️ **Restaurant & Menu Management**
