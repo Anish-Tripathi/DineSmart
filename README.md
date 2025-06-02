@@ -152,7 +152,7 @@ cat << 'EOF' >> README.md
 <div align="center">
   <img src="./screenshots/owner-menu-edit-restaurant.png" alt="Add Restaurant" width="400" height="250"/>
   <img src="./screenshots/owner-dashboard.png" alt="Manage Restaurant" width="400" height="250"/>
-  <br/><em>Add and manage restaurant details</em>
+  <br/><em>Manage restaurant analytics through dashboard</em>
 </div>
 
 <div align="center">
