@@ -42,8 +42,6 @@ coming soon ...
 
 ## 📸 Images
 
-## Note:
-
 > If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
 
 ---
