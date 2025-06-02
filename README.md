@@ -38,8 +38,6 @@
 
 https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
-cat << 'EOF' >> README.md
-
 ---
 
 ## 📸 Images
@@ -198,7 +196,11 @@ cat << 'EOF' >> README.md
   <br/><em>Contact-Us and Role based footer</em>
 </div>
 
-EOF
+## Note:
+
+> If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
+
+---
 
 ---
 
