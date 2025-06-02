@@ -36,7 +36,7 @@
 
 🎥 **Demo Video:**
 
-https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
+coming soon ...
 
 ---
 
