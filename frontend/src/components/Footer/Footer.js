@@ -65,10 +65,11 @@ export default function Footer() {
           <div className={styles.colLg3}>
             <h5 className={styles.footerHeading}>About Us</h5>
             <p className={styles.footerDescription}>
-              Welcome to DineSmart, your go-to spot for delicious meals
-              delivered straight to you. Explore our menu of mouthwatering
-              dishes, carefully crafted to satisfy every craving. Order now and
-              enjoy a seamless dining experience at the comfort of your home.
+              Welcome to DineSmart, your go-to destination for delicious meals
+              delivered straight to your doorstep. Search for the best
+              restaurants, explore menus tailored to your dietary preferences,
+              and enjoy a seamless ordering experience. From comfort food to
+              healthy bites—we’ve got you covered.
             </p>
             <div className={styles.socialIcons}>
               <a
