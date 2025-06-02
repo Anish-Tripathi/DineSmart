@@ -39,14 +39,14 @@
 coming soon ...
 
 ---
-
 ## 📸 Preview
 
 > If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
 
 ---
 
-### 🔐 Authentication Flow
+<details>
+<summary>🔐 Authentication Flow</summary>
 
 <div align="center">
   <img src="./screenshots/login.png" alt="Login" width="400" height="250"/>
@@ -56,9 +56,12 @@ coming soon ...
   <p><em>User login, sign-up, and password recovery</em></p>
 </div>
 
+</details>
+
 ---
 
-### 👤 Customer View
+<details>
+<summary>👤 Customer View</summary>
 
 #### 🏠 Homepage & Info
 
@@ -139,9 +142,12 @@ coming soon ...
   <br/><em>Track delivery and leave feedback</em>
 </div>
 
+</details>
+
 ---
 
-### 🧑‍🍳 Owner View
+<details>
+<summary>🧑‍🍳 Owner View</summary>
 
 #### 🏪 Restaurant & Menu Management
 
@@ -173,14 +179,16 @@ coming soon ...
 
 <div align="center">
   <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" height="250"/>
- 
   <img src="./screenshots/owner-booking-details.png" alt="Owner Analytics" width="400" height="250"/>
   <br/><em>Control table bookings and real time status</em>
 </div>
 
+</details>
+
 ---
 
-### 🧾 Common Pages
+<details>
+<summary>🧾 Common Pages</summary>
 
 <div align="center">
   <img src="./screenshots/settings.png" alt="Settings Page" width="400" height="250"/>
@@ -195,13 +203,15 @@ coming soon ...
 </div>
 
 <div align="center">
-  <img src="./screenshots/contact-us.png" alt="FAQ" width="400" height="250"/>
-  <img src="./screenshots/footer.png" alt="Feedback Page" width="400" height="250"/>
+  <img src="./screenshots/contact-us.png" alt="Contact Us" width="400" height="250"/>
+  <img src="./screenshots/footer.png" alt="Footer" width="400" height="250"/>
   <br/><em>Contact-Us and Role based footer</em>
 </div>
 
+</details>
 
 ---
+
 
 ## ✨ Features
 
