@@ -42,6 +42,12 @@ coming soon ...
 
 ## 📸 Images
 
+## Note:
+
+> If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
+
+---
+
 ### 🔐 Authentication Flow
 
 <div align="center">
@@ -196,11 +202,6 @@ coming soon ...
   <br/><em>Contact-Us and Role based footer</em>
 </div>
 
-## Note:
-
-> If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
-
----
 
 ---
 
