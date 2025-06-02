@@ -229,13 +229,13 @@ coming soon ...
 - **Interactive Food Carousel**: Stunning zoom effects showcasing featured dishes
 - **Intelligent Search**: Find restaurants by dish name, location, or cuisine
 - **Advanced Filtering System**:
-  - 📍 Location-based (current location + 10km radius)
-  - 🥬 Dietary preferences (Veg/Jain options)
-  - 💰 Price range filtering
-  - ⭐ Ratings and reviews
-  - 🍜 Cuisine type selection
-  - ⏱️ Delivery time estimation
-  - 📊 Smart sorting (price/rating: high-to-low, low-to-high)
+  - Location-based (current location + 10km radius)
+  - Dietary preferences (Veg/Jain options)
+  - Price range filtering
+  - Ratings and reviews
+  - Cuisine type selection
+  - ⏱Delivery time estimation
+  - Smart sorting (price/rating: high-to-low, low-to-high)
 
 #### 🍽️ **Restaurant & Menu Management**
 
