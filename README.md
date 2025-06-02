@@ -36,13 +36,15 @@
 
 🎥 **Demo Video:**
 
-https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
-
-cat << 'EOF' >> README.md
+coming soon ...
 
 ---
 
-## 📸 Images
+## 📸 Preview
+
+> If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
+
+---
 
 ### 🔐 Authentication Flow
 
@@ -152,7 +154,7 @@ cat << 'EOF' >> README.md
 <div align="center">
   <img src="./screenshots/owner-menu-edit-restaurant.png" alt="Add Restaurant" width="400" height="250"/>
   <img src="./screenshots/owner-dashboard.png" alt="Manage Restaurant" width="400" height="250"/>
-  <br/><em>Add and manage restaurant details</em>
+  <br/><em>Manage restaurant analytics through dashboard</em>
 </div>
 
 <div align="center">
@@ -198,7 +200,6 @@ cat << 'EOF' >> README.md
   <br/><em>Contact-Us and Role based footer</em>
 </div>
 
-EOF
 
 ---
 
