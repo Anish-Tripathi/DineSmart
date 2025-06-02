@@ -54,25 +54,155 @@ https://github.com/your-username/DineSmart/assets/your-video-id/demo.mp4
 
 ## 🏠 Homepage
 
-<h3 align="center"></h3>
-
 <table align="center">
   <tr>
     <td align="center">
       <img src="./screenshots/homepage-customer.png" alt="Customer Homepage" width="400" height="250"/>
       <br/>
-      <em>Personalized Restaurant Discovery for Customers</em>
+      <em>Personalized Restaurant Discovery</em>
     </td>
     <td align="center">
       <img src="./screenshots/homepage-owner.png" alt="Owner Homepage" width="400" height="250"/>
       <br/>
-      <em>Powerful Dashboard for Restaurant Owners</em>
+      <em>Dashboard for Restaurant Owners</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./screenshots/about.png" alt="About Page" width="400" height="250"/>
+      <br/>
+      <em>About Us – Our Mission</em>
+    </td>
+    <td align="center">
+      <img src="./screenshots/features.png" alt="Features Page" width="400" height="250"/>
+      <br/>
+      <em>Feature Overview</em>
     </td>
   </tr>
 </table>
 
+---
+
+## 🍽️ Menu & Ordering
+
+<div align="center">
+  <img src="./screenshots/restaurant-list.png" alt="Restaurant List" width="400" height="250"/>
+  <img src="./screenshots/customer-menu.png" alt="Customer Menu" width="400" height="250"/>
+  <br/>
+  <em>Browse restaurants and explore detailed menus</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/item-customization.png" alt="Item Customization" width="400" height="250"/>
+  <img src="./screenshots/add-to-cart.png" alt="Add to Cart" width="400" height="250"/>
+  <br/>
+  <em>Customize items and add them to cart</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/cart.png" alt="Cart" width="400" height="250"/>
+  <img src="./screenshots/cart-payment.png" alt="Cart Payment" width="400" height="250"/>
+  <br/>
+  <em>Cart overview and secure payment</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/order-confirmation.png" alt="Order Confirmation" width="400" height="250"/>
+  <img src="./screenshots/thank-you.png" alt="Thank You Page" width="400" height="250"/>
+  <br/>
+  <em>Order confirmation and success message</em>
+</div>
 
 ---
+
+## 🍽️ Book Table
+
+<div align="center">
+  <img src="./screenshots/booking-table.png" alt="Table Booking" width="400" height="250"/>
+  <img src="./screenshots/booking-details.png" alt="Booking Details" width="400" height="250"/>
+  <br/>
+  <em>Book a table and fill in details</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/booking-confirmation.png" alt="Booking Confirmation" width="400" height="250"/>
+  <img src="./screenshots/booking-tracking.png" alt="Booking Tracking" width="400" height="250"/>
+  <br/>
+  <em>Get confirmation and track reservation status</em>
+</div>
+
+---
+
+## 📦 Orders
+
+<div align="center">
+  <img src="./screenshots/order-history.png" alt="Order History" width="400" height="250"/>
+  <img src="./screenshots/order-details.png" alt="Order Details" width="400" height="250"/>
+  <br/>
+  <em>Access full order history with details</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/order-tracking.png" alt="Order Tracking" width="400" height="250"/>
+  <img src="./screenshots/order-feedback.png" alt="Order Feedback" width="400" height="250"/>
+  <br/>
+  <em>Track delivery and leave feedback</em>
+</div>
+
+---
+
+## 🧑‍🍳 Owner Dashboard & Management
+
+### 🍽️ Restaurant & Menu Management
+
+<div align="center">
+  <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400" height="250"/>
+  <img src="./screenshots/owner-restaurant-management.png" alt="Manage Restaurant" width="400" height="250"/>
+  <br/>
+  <em>Add and manage restaurant details</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/owner-menu-management.png" alt="Menu Management" width="400" height="250"/>
+  <img src="./screenshots/owner-menu-items.png" alt="Manage Menu Items" width="400" height="250"/>
+  <br/>
+  <em>Manage menus and menu items</em>
+</div>
+
+### 📦 Order & Booking Management
+
+<div align="center">
+  <img src="./screenshots/owner-order-booking-management.png" alt="Order Management" width="400" height="250"/>
+  <img src="./screenshots/owner-booking-management.png" alt="Booking Management" width="400" height="250"/>
+  <br/>
+  <em>Track customer orders and table bookings</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/owner-dashboard.png" alt="Owner Dashboard" width="400" height="250"/>
+  <img src="./screenshots/owner-analytics.png" alt="Owner Analytics" width="400" height="250"/>
+  <br/>
+  <em>Dashboard with key stats and analytics</em>
+</div>
+
+---
+
+## 🧾 Other Pages
+
+<div align="center">
+  <img src="./screenshots/settings.png" alt="Settings Page" width="400" height="250"/>
+  <img src="./screenshots/terms.png" alt="Terms and Conditions" width="400" height="250"/>
+  <br/>
+  <em>Settings & Terms of Use</em>
+</div>
+
+<div align="center">
+  <img src="./screenshots/faq.png" alt="FAQ" width="400" height="250"/>
+  <img src="./screenshots/feedback.png" alt="Feedback Page" width="400" height="250"/>
+  <br/>
+  <em>Frequently Asked Questions and Feedback Form</em>
+</div>
+
 
 ## 🍽️ Customer View – Menu & Ordering
 
