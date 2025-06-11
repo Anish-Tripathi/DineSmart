@@ -13,6 +13,7 @@
 
 - [🚀 Live Demo](#-live-demo)
 - [📸 Preview](#-preview)
+-  [📸 Key Highlights](#-key-highlights)
 - [✨ Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Quick Start](#-quick-start)
@@ -23,6 +24,15 @@
 
 ---
 
+## 🚀 Live Demo
+
+🌐 **[Try DineSmart Live](https://dinesmart-1.onrender.com/)**
+
+🎥 **Demo Video:**
+
+coming soon ...
+
+---
 ### 🎯 Key Highlights
 
 **Fully Role-Based Single Page Application (SPA)**  
@@ -42,16 +52,6 @@
 
 - **Dynamic Restaurant Dashboard for Owners**  
   Provides analytics, order management, and operational insights to help restaurant owners optimize their services.
-
----
-
-## 🚀 Live Demo
-
-🌐 **[Try DineSmart Live](https://dinesmart-1.onrender.com/)**
-
-🎥 **Demo Video:**
-
-coming soon ...
 
 ---
 ## 📸 Preview
