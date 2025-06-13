@@ -7,7 +7,7 @@
 
 <p align="center">
   <b>DineSmart</b> is a comprehensive, full-stack restaurant discovery and food ordering platform that revolutionizes how customers find restaurants and how owners manage their business.  
-Built with the MERN stack, it features intelligent filtering, real-time order tracking, secure authentication, and role-based access control.
+
 </p>
 
 
