@@ -565,7 +565,7 @@ We welcome contributions!
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Inspiration from modern food delivery platforms like zomato and swiggy.
 - Open source community for amazing tools and libraries
