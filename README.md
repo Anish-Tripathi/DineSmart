@@ -15,29 +15,29 @@
 
 ## 📋 Table of Contents
 
-- [🚀 Live Demo](#-live-demo)
-- [📸 Preview](#-preview)
--  [📸 Key Highlights](#-key-highlights)
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Quick Start](#-quick-start)
-- [🔌 API Documentation](#-api-documentation)
-- [📁 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [🙏 Acknowledgments](#-acknowledgments)
+- [ Live Demo](#-live-demo)
+- [ Preview](#-preview)
+-  [Key Highlights](#-key-highlights)
+- [Features](#-features)
+- [ Tech Stack](#️-tech-stack)
+- [ Quick Start](#-quick-start)
+- [API Documentation](#-api-documentation)
+- [ Project Structure](#-project-structure)
+- [ Contributing](#-contributing)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
-🌐 **[Try DineSmart Live](https://dinesmart-1.onrender.com/)**
+ **[Try DineSmart Live](https://dinesmart-1.onrender.com/)**
 
-🎥 **Demo Video:**
+**Demo Video:**
 
 coming soon ...
 
 ---
-### 🎯 Key Highlights
+###  Key Highlights
 
 **Fully Role-Based Single Page Application (SPA)**  
  Supports different user roles with tailored interfaces and access control, including customers and restaurant owners.
@@ -65,7 +65,7 @@ coming soon ...
 ---
 
 <details>
-<summary>🔐 Authentication Flow</summary>
+<summary> Authentication Flow</summary>
 
 <div align="center">
   <img src="./screenshots/login.png" alt="Login" width="400" height="250"/>
@@ -80,9 +80,9 @@ coming soon ...
 ---
 
 <details>
-<summary>👤 Customer View</summary>
+<summary> Customer View</summary>
 
-#### 🏠 Homepage & Info
+####  Homepage & Info
 
 <table align="center">
   <tr>
@@ -107,7 +107,7 @@ coming soon ...
   </tr>
 </table>
 
-#### 🍽️ Menu & Ordering
+#### Menu & Ordering
 
 <div align="center">
   <img src="./screenshots/restaurant-list.png" alt="Restaurant List" width="400" height="250"/>
@@ -133,7 +133,7 @@ coming soon ...
   <br/><em>Order confirmation and success message</em>
 </div>
 
-#### 🍽️ Table Booking
+#### Table Booking
 
 <div align="center">
   <img src="./screenshots/booking-table.png" alt="Table Booking" width="400" height="250"/>
@@ -147,7 +147,7 @@ coming soon ...
   <br/><em>Get confirmation and track reservation status</em>
 </div>
 
-#### 📦 Order Management
+#### Order Management
 
 <div align="center">
   <img src="./screenshots/order-history.png" alt="Order History" width="400" height="250"/>
@@ -166,9 +166,9 @@ coming soon ...
 ---
 
 <details>
-<summary>🧑‍🍳 Owner View</summary>
+<summary> Owner View</summary>
 
-#### 🏪 Restaurant & Menu Management
+#### Restaurant & Menu Management
 
 <div align="center">
   <img src="./screenshots/owner-add-restaurant.png" alt="Add Restaurant" width="400" height="250"/>
@@ -188,7 +188,7 @@ coming soon ...
   <br/><em>Manage menus and menu items</em>
 </div>
 
-#### 📋 Order & Booking Controls
+####  Order & Booking Controls
 
 <div align="center">
   <img src="./screenshots/owner-order-management.png" alt="Order Management" width="400" height="250"/>
@@ -207,7 +207,7 @@ coming soon ...
 ---
 
 <details>
-<summary>🧾 Common Pages</summary>
+<summary> Common Pages</summary>
 
 <div align="center">
   <img src="./screenshots/settings.png" alt="Settings Page" width="400" height="250"/>
@@ -232,18 +232,18 @@ coming soon ...
 ---
 
 
-## ✨ Features
+##  Features
 
-### 👤 **Customer Experience**
+###  **Customer Experience**
 
-#### 🔐 **Authentication & Security**
+####  **Authentication & Security**
 
 - **Multi-role Signup**: Customer and Restaurant Owner registration
 - **Secure Login**: Email/password with alphanumeric CAPTCHA verification
 - **Password Recovery**: Email-based OTP verification for password reset
 - **Profile Management**: Update personal details and notification preferences
 
-#### 🏠 **Smart Home Page**
+####  **Smart Home Page**
 
 - **Interactive Food Carousel**: Stunning zoom effects showcasing featured dishes
 - **Intelligent Search**: Find restaurants by dish name, location, or cuisine
@@ -256,7 +256,7 @@ coming soon ...
   - Delivery time estimation
   - Smart sorting (price/rating: high-to-low, low-to-high)
 
-#### 🍽️ **Restaurant & Menu Management**
+####  **Restaurant & Menu Management**
 
 - **Detailed Restaurant Cards**: Promotions, ratings, and key information
 - **Comprehensive Menu View**:
@@ -267,7 +267,7 @@ coming soon ...
   - Customer ratings and reviews
 - **Smart Menu Search**: Find items by name, ingredients, or cuisine type
 
-#### 🛒 **Shopping & Ordering**
+####  **Shopping & Ordering**
 
 - **Intelligent Cart System**:
   - Single restaurant ordering (auto-clear for different restaurants)
@@ -278,7 +278,7 @@ coming soon ...
   2. **Payment Options**: Card, UPI, or Cash on Delivery
   3. **Order Confirmation**: Downloadable PDF receipt
 
-#### 📦 **Order Management**
+####  **Order Management**
 
 - **Real-time Order Tracking**: Live status updates from preparation to delivery
 - **Order History**: Filter by date, restaurant, status, or order details
@@ -287,7 +287,7 @@ coming soon ...
   - Estimated delivery time with restaurant contact info
 - **Smart Filters**: Search orders by multiple criteria
 
-#### 🪑 **Table Reservation System**
+####  **Table Reservation System**
 
 - **Easy Booking Process**: Select guests, date, time with zero booking fee
 - **Booking Management**:
@@ -296,9 +296,9 @@ coming soon ...
   - Downloadable booking confirmation PDF
 - **Flexible Filtering**: Filter bookings by date, time, restaurant, or status
 
-### 🧑‍🍳 **Restaurant Owner Dashboard**
+###  **Restaurant Owner Dashboard**
 
-#### 🏪 **Restaurant Management**
+####  **Restaurant Management**
 
 - **Complete Restaurant Profile**:
   - Business details, location, cuisine type
@@ -310,7 +310,7 @@ coming soon ...
   - Set validity periods and discount percentages
   - Activate/deactivate promotions instantly
 
-#### 📋 **Menu Management System**
+####  **Menu Management System**
 
 - **Category-based Organization**: Structured menu layout
 - **Comprehensive Item Details**:
@@ -321,13 +321,13 @@ coming soon ...
   - Pricing and descriptions
 - **Bulk Management**: Table view for easy menu item editing and removal
 
-#### 📊 **Business Analytics**
+####  **Business Analytics**
 
 - **Performance Dashboard**: Revenue, ratings, and trend analysis
 - **Order Analytics**: Track order volume and patterns
 - **Customer Insights**: Understanding customer preferences
 
-#### 🛎️ **Order & Booking Management**
+####  **Order & Booking Management**
 
 - **Real-time Order Processing**:
   - Filter orders by status, date, and details
@@ -339,13 +339,13 @@ coming soon ...
   - Update booking status
   - Filter bookings by multiple criteria
 
-### 🔄 **Role-Based Access Control**
+###  **Role-Based Access Control**
 
 - **Dynamic Navigation**: Role-specific menu items and features
 - **Secure Route Protection**: Access control based on user roles
 - **Customized UI Components**: Different layouts for customers vs owners
 
-### 📱 **Universal Features**
+###  **Universal Features**
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile
 - **Settings Management**: Profile updates and notification controls
@@ -354,7 +354,7 @@ coming soon ...
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### **Frontend**
 
@@ -385,7 +385,7 @@ coming soon ...
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -545,7 +545,7 @@ dinesmart/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions!
 
