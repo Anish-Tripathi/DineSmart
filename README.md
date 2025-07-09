@@ -13,7 +13,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [ Live Demo](#-live-demo)
 - [ Preview](#-preview)
