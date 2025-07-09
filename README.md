@@ -58,7 +58,7 @@ coming soon ...
   Provides analytics, order management, and operational insights to help restaurant owners optimize their services.
 
 ---
-## 📸 Preview
+## Preview
 
 > If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
 
